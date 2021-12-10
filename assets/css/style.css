@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #050814;
+}
+
+/* Below CSS is for Header*/
+h1 {
+  color: aliceblue;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  transition: all 0.3s ease 0s;
+}
+
+h1:hover {
+  color: #e69c4e;
+}
+
+li,
+a,
+button {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: aliceblue;
+  text-decoration: none;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 10%;
+}
+
+button {
+  padding: 9px 25px;
+  background-color: rgb(25, 179, 127, 1);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+button:hover {
+  color: rgb(2, 2, 2, 1);
+}
+
+.heroimg {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 40%;
+}
+
+.responsive-iframe {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.nav_links {
+  list-style: none;
+}
+
+.nav_links li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+.nav_links li a {
+  transition: all 0.3s ease 0s;
+}
+
+.nav_links li a:hover {
+  color: blueviolet;
+}
+
+/*Contact/Footer*/
+
+.contact-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: 80vh;
+  padding: 0 2rem;
+  background: #050814;
+}
+
+.contact-section-header > h2 {
+  font-size: 6rem;
+  color: #399fff;
+}
+
+@media (max-width: 28.75em) {
+  .contact-section-header > h2 {
+    font-size: 4rem;
+  }
+}
+
+.contact-section-header > p {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 25px;
+  font-weight: 500;
+  color: #e69c4e;
+}
+
+.contact-links {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  max-width: 980px;
+  margin-top: 4rem;
+  flex-wrap: wrap;
+}
+
+.contact-details {
+  font-size: 2.4rem;
+  transition: all 0.3s ease 0s;
+}
+
+.contact-details:hover {
+  transform: translateY(8px);
+  color: #14b678;
+}
