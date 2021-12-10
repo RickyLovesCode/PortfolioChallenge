@@ -3,10 +3,14 @@
   padding: 0;
   box-sizing: border-box;
   background-color: #050814;
+  max-width: 100vw;
 }
 
+body {
+  overflow-x: hidden;
+}
 /* Below CSS is for Header*/
-h1 {
+header h1 {
   color: aliceblue;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-size: 20px;
@@ -14,7 +18,7 @@ h1 {
   transition: all 0.3s ease 0s;
 }
 
-h1:hover {
+header h1:hover {
   color: #e69c4e;
 }
 
@@ -48,6 +52,26 @@ button:hover {
   color: rgb(2, 2, 2, 1);
 }
 
+/*NAV BAR*/
+.nav_links {
+  list-style: none;
+}
+
+.nav_links li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+.nav_links li a {
+  transition: all 0.3s ease 0s;
+}
+
+.nav_links li a:hover {
+  color: blueviolet;
+}
+/*END NAV BAR*/
+
+/*IFRAME*/
 .heroimg {
   position: relative;
   overflow: hidden;
@@ -67,23 +91,117 @@ button:hover {
   width: 100%;
   height: 100%;
 }
+/*END IFRAME*/
 
-.nav_links {
-  list-style: none;
+/*PROJECTS/MY WORK*/
+#projects .work-title {
+  font-size: 4rem;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: 300;
+  color: white;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  text-align: center;
 }
 
-.nav_links li {
-  display: inline-block;
-  padding: 0px 20px;
-}
-
-.nav_links li a {
-  transition: all 0.3s ease 0s;
-}
-
-.nav_links li a:hover {
+#projects .work-title span {
   color: blueviolet;
 }
+
+#projects .projects {
+  flex-direction: column;
+  max-width: 60vw;
+  margin: 0 auto;
+  padding: 100px 0;
+  border-bottom: 2px solid #14b678;
+}
+
+#projects .projects-header h1 {
+  margin-bottom: 50px;
+}
+
+#projects .project-all {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  /* flex-direction: column; */
+}
+
+#projects .project-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  flex-grow: 1;
+  /* margin: 20px auto; */
+  overflow: hidden;
+  border-radius: 10px;
+  min-height: 500px;
+  margin: 5vh 2vw;
+}
+
+#projects .project-info {
+  padding: 30px;
+  flex-basis: 50%;
+  height: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  background-image: linear-gradient(60deg, #050814 55%, #e69c4e 100%);
+}
+
+#projects .project-info h1 {
+  font-size: 3.5rem;
+  font-weight: 500;
+  color: white;
+  background-color: transparent;
+}
+
+#projects .project-info h1 span {
+  color: blueviolet;
+  background-color: transparent;
+}
+
+#projects .project-info h2 {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-top: 10px;
+  color: #14b678;
+}
+
+#projects .project-info p {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: white;
+  background-color: transparent;
+}
+
+.project-img {
+  width: 100%;
+}
+
+.project-all .project-img img {
+  /* flex-basis: 50%; */
+  /* width: 25%; */
+  max-width: 100%;
+  height: auto;
+  border-radius: 0 0 10px 10px;
+}
+
+#projects .project-img::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  color: #050814;
+  opacity: 0.7;
+}
+
+/*END PROJECTS/MY WORK*/
 
 /*Contact/Footer*/
 
