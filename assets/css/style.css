@@ -154,7 +154,7 @@ button:hover {
 }
 
 #projects .project-info h1 {
-  font-size: 3.5rem;
+  font-size: 3rem;
   font-weight: 500;
   color: white;
   background-color: transparent;
@@ -170,6 +170,7 @@ button:hover {
   font-weight: 500;
   margin-top: 10px;
   color: #14b678;
+  background-color: transparent;
 }
 
 #projects .project-info p {
