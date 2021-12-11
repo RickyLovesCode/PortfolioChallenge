@@ -150,7 +150,7 @@ button:hover {
   align-items: flex-start;
   justify-content: center;
   flex-direction: column;
-  background-image: linear-gradient(60deg, #050814 55%, #e69c4e 100%);
+  background-image: linear-gradient(75deg, #050814 55%, #dff26c 150%);
 }
 
 #projects .project-info h1 {
