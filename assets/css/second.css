@@ -70,3 +70,87 @@ button:hover {
   color: blueviolet;
 }
 /*END NAV BAR*/
+
+/*HERO SECTION*/
+.hero {
+  text-align: center;
+}
+.hero h2 {
+  color: white;
+  font-size: 2rem;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: 500;
+  margin: auto;
+}
+.hero h2 span {
+  color: blueviolet;
+}
+.hero-img {
+  align-items: flex-start;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  /* background-image: url("assets\images\project6.jpg"); */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-position: 80%;
+}
+
+/*END HERO SECTION*/
+/*Contact/Footer*/
+
+.contact-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: 80vh;
+  padding: 0 2rem;
+  background: #050814;
+}
+
+.contact-section-header > h2 {
+  font-size: 6rem;
+  color: #399fff;
+}
+
+.contact-section-header > h2 span {
+  font-size: 6rem;
+  color: #e69c4e;
+}
+
+@media (max-width: 28.75em) {
+  .contact-section-header > h2 {
+    font-size: 4rem;
+  }
+}
+
+.contact-section-header > p {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 25px;
+  font-weight: 500;
+  color: white;
+}
+
+.contact-links {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  max-width: 980px;
+  margin-top: 4rem;
+  flex-wrap: wrap;
+}
+
+.contact-details {
+  font-size: 2.4rem;
+  transition: all 0.3s ease 0s;
+  color: #14b678;
+}
+
+.contact-details:hover {
+  transform: translateX(10px) rotate(10deg) translateY(-10px);
+  color: blueviolet;
+}

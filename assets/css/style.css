@@ -114,7 +114,7 @@ button:hover {
   max-width: 60vw;
   margin: 0 auto;
   padding: 100px 0;
-  border-bottom: 3px ridge #14b678;
+  border-bottom: 3px ridge blueviolet;
 }
 
 #projects .projects-header h1 {
@@ -150,7 +150,7 @@ button:hover {
   align-items: flex-start;
   justify-content: center;
   flex-direction: column;
-  background-image: linear-gradient(75deg, #050814 45%, #e69c4e 170%);
+  background-image: linear-gradient(75deg, #050814 45%, blueviolet 170%);
 }
 
 #projects .project-info h1 {
@@ -169,7 +169,7 @@ button:hover {
   font-size: 1.8rem;
   font-weight: 500;
   margin-top: 10px;
-  color: #14b678;
+  color: #399fff;
   background-color: transparent;
 }
 
@@ -261,7 +261,7 @@ button:hover {
 .contact-details {
   font-size: 2.4rem;
   transition: all 0.3s ease 0s;
-  color: #dff26c;
+  color: #14b678;
 }
 
 .contact-details:hover {
