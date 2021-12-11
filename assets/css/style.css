@@ -10,7 +10,7 @@ body {
   overflow-x: hidden;
 }
 /* Below CSS is for Header*/
-header h1 {
+h1 a {
   color: aliceblue;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-size: 20px;
@@ -18,7 +18,7 @@ header h1 {
   transition: all 0.3s ease 0s;
 }
 
-header h1:hover {
+h1 a:hover {
   color: #e69c4e;
 }
 
