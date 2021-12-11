@@ -114,7 +114,7 @@ button:hover {
   max-width: 60vw;
   margin: 0 auto;
   padding: 100px 0;
-  border-bottom: 2px solid #14b678;
+  border-bottom: 3px ridge #14b678;
 }
 
 #projects .projects-header h1 {
@@ -150,7 +150,7 @@ button:hover {
   align-items: flex-start;
   justify-content: center;
   flex-direction: column;
-  background-image: linear-gradient(75deg, #050814 55%, #dff26c 150%);
+  background-image: linear-gradient(75deg, #050814 45%, #e69c4e 170%);
 }
 
 #projects .project-info h1 {
@@ -192,7 +192,15 @@ button:hover {
   border-radius: 0 0 10px 10px;
 }
 
-#projects .project-img::after {
+.project-all .project-img img {
+  transform: 0.3s ease transform;
+}
+
+.project-all .project-img:hover img {
+  transform: scale(1.1);
+}
+/* 
+.project-all .project-img::after {
   content: "";
   position: absolute;
   top: 0;
@@ -200,7 +208,7 @@ button:hover {
   width: 100%;
   color: #050814;
   opacity: 0.7;
-}
+} */
 
 /*END PROJECTS/MY WORK*/
 
@@ -223,6 +231,11 @@ button:hover {
   color: #399fff;
 }
 
+.contact-section-header > h2 span {
+  font-size: 6rem;
+  color: #e69c4e;
+}
+
 @media (max-width: 28.75em) {
   .contact-section-header > h2 {
     font-size: 4rem;
@@ -233,7 +246,7 @@ button:hover {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-size: 25px;
   font-weight: 500;
-  color: #e69c4e;
+  color: white;
 }
 
 .contact-links {
@@ -248,9 +261,10 @@ button:hover {
 .contact-details {
   font-size: 2.4rem;
   transition: all 0.3s ease 0s;
+  color: #dff26c;
 }
 
 .contact-details:hover {
-  transform: translateY(8px);
-  color: #14b678;
+  transform: translateX(10px) rotate(10deg) translateY(-10px);
+  color: blueviolet;
 }
