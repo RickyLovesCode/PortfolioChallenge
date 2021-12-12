@@ -81,10 +81,14 @@ button:hover {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-weight: 500;
   margin: auto;
+  padding-top: 5%;
+  padding-bottom: 5%;
 }
+
 .hero h2 span {
   color: blueviolet;
 }
+
 .hero-img {
   align-items: flex-start;
   display: flex;
@@ -96,8 +100,98 @@ button:hover {
   background-attachment: fixed;
   background-position: 80%;
 }
-
 /*END HERO SECTION*/
+
+/*ABOUT ME/BIO*/
+.about me {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  /* padding: 100px;
+  margin: auto; */
+  width: 100%;
+}
+
+.about-me .title2 h3 {
+  font-size: 2.8rem;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: 300;
+  color: white;
+  margin-top: 40px;
+  margin-left: 90px;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  text-align: LEFT;
+}
+
+.about-me .title2 h3 span {
+  color: #e69c4e;
+}
+
+.about-me .title h3 {
+  font-size: 2.8rem;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: 300;
+  color: white;
+  margin-top: 40px;
+  margin-right: 13%;
+  margin-bottom: 55px;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  text-align: right;
+}
+
+.about-me .title h3 span {
+  color: blueviolet;
+}
+
+.about-me .bio {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+/*ALL P ELEMENTS*/
+.about-me .bio p {
+  font-size: 1.5rem;
+  letter-spacing: 0.1rem;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  text-align: left;
+  padding-right: 10px;
+}
+
+.about-me .bio .one {
+  color: #e69c4e;
+}
+
+.about-me .bio .two {
+  color: #399fff;
+}
+
+.about-me .bio .three {
+  color: #14b678;
+}
+
+.about-me .bio .four {
+  color: blueviolet;
+}
+/*END ALL P ELEMENTS*/
+
+.about-me .bio img {
+  height: auto;
+  max-width: 35%;
+  margin-left: 50px;
+  margin-right: 10%;
+  border-radius: 50%;
+}
+
+.about-me .bio img:hover {
+  transform: translate(1px, -2px) rotate(-5deg);
+}
+
+/*END ABOUT ME BIO*/
+
 /*Contact/Footer*/
 
 .contact-section {
@@ -113,20 +207,21 @@ button:hover {
 }
 
 .contact-section-header > h2 {
-  font-size: 6rem;
+  font-size: 5rem;
   color: #399fff;
 }
 
 .contact-section-header > h2 span {
-  font-size: 6rem;
+  font-size: 5rem;
   color: #e69c4e;
 }
 
+/* MEDIA
 @media (max-width: 28.75em) {
   .contact-section-header > h2 {
     font-size: 4rem;
   }
-}
+} */
 
 .contact-section-header > p {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
@@ -153,4 +248,70 @@ button:hover {
 .contact-details:hover {
   transform: translateX(10px) rotate(10deg) translateY(-10px);
   color: blueviolet;
+}
+/*MEDIA*/
+@media screen and (max-width: 800px) {
+  .about-me .bio {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .about-me .bio p {
+    font-size: 18px;
+    letter-spacing: 0rem;
+    padding-right: 0px;
+  }
+}
+/*MEDIA700*/
+@media screen and (max-width: 700px) {
+  .about-me .title h3 {
+    font-size: 1.5rem;
+  }
+
+  .about-me .title2 h3 {
+    font-size: 1.5rem;
+  }
+}
+/*MEDIA380*/
+@media screen and (max-width: 380px) {
+  .about-me .title h3 {
+    font-size: 1.2rem;
+  }
+
+  .about-me .title2 h3 {
+    font-size: 1.2rem;
+  }
+}
+
+/*MEDIA*/
+@media (max-width: 28.75em) {
+  .contact-section-header h2 span {
+    font-size: 4rem;
+  }
+  .contact-section-header > h2 {
+    font-size: 4rem;
+  }
+
+  .about-me .bio {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .about-me .bio p {
+    font-size: 12px;
+    letter-spacing: 0rem;
+    padding-right: 0px;
+  }
+
+  #projects .project-item {
+    justify-content: unset;
+  }
+
+  .responsive-iframe {
+    width: 100vw;
+  }
 }

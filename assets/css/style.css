@@ -132,7 +132,7 @@ button:hover {
 #projects .project-item {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   flex-direction: column;
   flex-grow: 1;
   /* margin: 20px auto; */
@@ -227,19 +227,13 @@ button:hover {
 }
 
 .contact-section-header > h2 {
-  font-size: 6rem;
+  font-size: 5rem;
   color: #399fff;
 }
 
 .contact-section-header > h2 span {
-  font-size: 6rem;
+  font-size: 5rem;
   color: #e69c4e;
-}
-
-@media (max-width: 28.75em) {
-  .contact-section-header > h2 {
-    font-size: 4rem;
-  }
 }
 
 .contact-section-header > p {
@@ -267,4 +261,21 @@ button:hover {
 .contact-details:hover {
   transform: translateX(10px) rotate(10deg) translateY(-10px);
   color: blueviolet;
+}
+/*MEDIA*/
+@media (max-width: 28.75em) {
+  .contact-section-header h2 span {
+    font-size: 4rem;
+  }
+  .contact-section-header > h2 {
+    font-size: 4rem;
+  }
+
+  #projects .project-item {
+    justify-content: unset;
+  }
+
+  .responsive-iframe {
+    width: 100vw;
+  }
 }
