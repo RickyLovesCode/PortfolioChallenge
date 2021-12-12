@@ -6,7 +6,7 @@ A website made by myself for myself!
 
 To showcase my previous projects ive created
 
-and test my abilities as a developer.e
+and test my abilities as a developer.
 
 ## Built With
 
