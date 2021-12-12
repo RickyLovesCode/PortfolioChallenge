@@ -155,6 +155,7 @@ button:hover {
 /*ALL P ELEMENTS*/
 .about-me .bio p {
   font-size: 1.5rem;
+  font-weight: 200;
   letter-spacing: 0.1rem;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   text-align: left;
