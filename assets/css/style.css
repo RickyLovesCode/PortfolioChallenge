@@ -194,10 +194,12 @@ button:hover {
 
 .project-all .project-img img {
   transform: 0.3s ease transform;
+  opacity: 0.8;
 }
 
 .project-all .project-img:hover img {
   transform: scale(1.1);
+  opacity: 0.2;
 }
 /* 
 .project-all .project-img::after {
@@ -277,5 +279,60 @@ button:hover {
 
   .responsive-iframe {
     width: 100vw;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  header {
+    display: flex;
+    padding: 0px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    align-items: baseline;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+  }
+
+  button {
+    padding: 5px 15px;
+  }
+}
+
+@media screen and (max-width: 447px) {
+  header {
+    display: flex;
+    padding: 0px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    align-items: baseline;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+  }
+
+  button {
+    margin-top: 15px;
+  }
+
+  /* button {
+    padding: 5px 15px;
+  } */
+
+  #projects .project-info {
+    align-items: center;
+    padding: 10px;
+  }
+
+  #projects .projects {
+    max-width: 80vw;
+  }
+
+  #projects .project-info h1 {
+    font-size: 2rem;
+  }
+
+  #projects .work-title {
+    font-size: 2rem;
   }
 }
