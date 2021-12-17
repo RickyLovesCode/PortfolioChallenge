@@ -307,11 +307,12 @@ button:hover {
     border-right-style: solid;
     margin-right: 15px;
     margin-left: 25px;
+    font-weight: 100;
   }
 
   .about-me .bio img {
     margin-bottom: 50px;
-    width: 42%;
+    width: 50%;
   }
 }
 

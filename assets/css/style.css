@@ -72,23 +72,23 @@ button:hover {
 /*END NAV BAR*/
 
 /*IFRAME*/
-.heroimg {
+.container {
   position: relative;
   overflow: hidden;
   width: 100%;
   padding-top: 40%;
 }
 
-.responsive-iframe {
+.canvas3d {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   position: absolute;
   top: 0;
   left: 0;
   bottom: 0;
   right: 0;
-  width: 100%;
+  /* width: 100%; */
   height: 100%;
 }
 /*END IFRAME*/
@@ -199,7 +199,7 @@ button:hover {
 
 .project-all .project-img:hover img {
   transform: scale(1.1);
-  opacity: 0.2;
+  /* opacity: 0.2;/\ */
 }
 /* 
 .project-all .project-img::after {
@@ -277,7 +277,7 @@ button:hover {
     justify-content: unset;
   }
 
-  .responsive-iframe {
+  .canvas3d {
     width: 100vw;
   }
 }
