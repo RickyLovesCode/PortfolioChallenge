@@ -4,7 +4,7 @@
 
 A website made by myself for myself!
 
-To showcase my previous projects ive created
+To showcase my previous projects i created
 
 and test my abilities as a developer.
 
