@@ -14,7 +14,7 @@ h1 a {
   color: aliceblue;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-size: 20px;
-  font-weight: 600;
+  font-weight: 500;
   transition: all 0.3s ease 0s;
 }
 
@@ -64,6 +64,7 @@ button:hover {
 
 .nav_links li a {
   transition: all 0.3s ease 0s;
+  font-size: 1.2rem;
 }
 
 .nav_links li a:hover {
@@ -77,7 +78,7 @@ button:hover {
 }
 .hero h2 {
   color: white;
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-weight: 500;
   margin: auto;
